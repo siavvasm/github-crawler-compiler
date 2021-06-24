@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.miltos.research</groupId>
+  <artifactId>github-crawler-compiler</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>github-crawler-compiler</name>
+  <url>http://maven.apache.org</url>
+
+<dependencies>
+		<dependency>
+			<groupId>org.glassfish.jersey.bundles</groupId>
+			<artifactId>jaxrs-ri</artifactId>
+			<version>2.16</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-moxy</artifactId>
+			<version>2.16</version>
+		</dependency>
+		<dependency>
+    		<groupId>com.google.code.gson</groupId>
+    		<artifactId>gson</artifactId>
+    		<version>2.8.2</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.json</groupId>
+    		<artifactId>json</artifactId>
+    		<version>20180130</version>
+		</dependency>
+		<dependency>
+    		<groupId>commons-io</groupId>
+    		<artifactId>commons-io</artifactId>
+   			 <version>2.5</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.apache.maven.shared</groupId>
+    		<artifactId>maven-invoker</artifactId>
+    		<version>3.0.0</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.eclipse.jgit</groupId>
+    		<artifactId>org.eclipse.jgit</artifactId>
+    		<version>4.11.0.201803080745-r</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.jdom</groupId>
+    		<artifactId>jdom</artifactId>
+    		<version>2.0.2</version>
+		</dependency>
+	</dependencies>
+	
+	 <!-- Select the Java 1.7 JRE/JDK as the default environment to be used -->
+	 <build>
+	 		<finalName>github-crawler-compiler</finalName>
+	 		<plugins>
+	 			<plugin>
+	 				<groupId>org.apache.maven.plugins</groupId>
+	 				<artifactId>maven-compiler-plugin</artifactId>
+	 				<version>2.5.1</version>
+	 				<inherited>true</inherited>
+	 				<configuration>
+	 					<source>1.7</source>
+	 					<target>1.7</target>
+	 				</configuration>
+	 			</plugin>
+	 		</plugins>
+	 </build>
+</project>
